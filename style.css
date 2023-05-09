@@ -1,3 +1,11 @@
+:root {
+    --primary: #FF7F50;
+    --secondary: #ec4e14;
+    --light: #fff;
+    --light1: #dff6ff;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -11,14 +19,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FF7F50;
+    background:  var(--primary);
 }
 
 .container{
     position: relative;
     width: 400px;
     height: 105px;
-    background: #fff;
+    background: var(--light);
     padding: 28px 32px;
     overflow: hidden;
     border-radius: 18px;
@@ -35,7 +43,7 @@ body{
 }
 
 .search-box input{
-    color: #06283D;
+    color:  var(--secondary);
     width: 80%;
     font-size: 24px;
     font-weight: 500;
@@ -46,7 +54,7 @@ body{
 .search-box input::placeholder{
     font-size: 20px;
     font-weight: 500;
-    color: #06283D;
+    color:  var(--secondary);
     text-transform: capitalize;
 }
 
@@ -54,21 +62,21 @@ body{
     cursor: pointer;
     width: 50px;
     height: 50px;
-    color: #06283D;
-    background: #dff6ff;
+    color:  var(--secondary);
+    background:  var(--light1);
     border-radius: 50%;
     font-size: 22px;
     transition: 0.4s ease;
 }
 
 .search-box button:hover{
-    color: #fff;
-    background: #06283D;
+    color: var(--light);
+    background:  var(--secondary);
 }
 
 .search-box i{
     position: absolute;
-    color: #06283D;
+    color:  var(--secondary);
     font-size: 28px;
 }
 
@@ -83,7 +91,7 @@ body{
 
 .weather-box .temperature{
     position: relative;
-    color: #06283D;
+    color:  var(--secondary);
     font-size: 4rem;
     font-weight: 800;
     margin-top: 30px;
@@ -97,7 +105,7 @@ body{
 }
 
 .weather-box .description{
-    color: #06283D;
+    color:  var(--secondary);
     font-size: 22px;
     font-weight: 500;
     text-transform: capitalize;
@@ -128,20 +136,20 @@ body{
 }
 
 .weather-details i{
-    color: #06283D;
+    color:  var(--secondary);
     font-size: 26px;
     margin-right: 10px;
     margin-top: 6px;
 }
 
 .weather-details span{
-    color: #06283D;
+    color:  var(--secondary);
     font-size: 22px;
     font-weight: 500;
 }
 
 .weather-details p{
-    color: #06283D;
+    color:  var(--secondary);
     font-size: 14px;
     font-weight: 500;
 }
@@ -160,7 +168,7 @@ body{
 }
 
 .not-found p{
-    color: #06283D;
+    color:  var(--secondary);
     font-size: 22px;
     font-weight: 500;
     margin-top: 12px;
