@@ -16,7 +16,7 @@ input.addEventListener("keypress", function(event) {
 
 search.addEventListener('click', () => {
 
-    const APIKey = 'ade56f70450c5b8e91254109dc4da4db';
+    const APIKey = 'YOUR API KEY HERE';
     const city = document.querySelector('.search-box input').value;
 
     if (city === '')
